@@ -1,9 +1,19 @@
+import styled from "styled-components";
+import ArticleFetcher from "./components/ArticleFetcher";
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
+    <main className="App">
+      <Container>
+        <ArticleFetcher />
+      </Container>
+    </main>
   );
 }
 
 export default App;
+
+const Container = styled.div`
+  min-height: 100vh;
+  padding: 20px;
+`;
